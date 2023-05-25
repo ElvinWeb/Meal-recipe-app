@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../StyleSheet/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Recipe App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="meal-wrapper">
+        <div class="meal-search">
+          <h2 class="title">Finds meal for you ingridients</h2>
+          <blockquote>
+            A recipe is a story that ends with a good meal
+            <cite>~ Pat Conroy </cite>
+          </blockquote>
+          <div class="meal-search-box">
+            <input
+              type="text"
+              class="search-control"
+              id = "search-input"
+              placeholder="Enter the ingredient"
+            />
+            <button class="search-btn btn" type="submit" id="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+        <div id="meal-result">
+          <h2 class="title">Your Search Results:</h2>
+          <div id="meal">
+           <!-- meal card -->
+          </div>
+        </div>
+        <div class="meal-details">
+          <button type="submit" class="btn recipe-close-btn">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+
+          <div class="meal-details-content">
+            <!-- meal recipe -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../JavaScript/app.js"></script>
+  </body>
+</html>
